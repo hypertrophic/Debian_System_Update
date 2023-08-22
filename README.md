@@ -19,4 +19,4 @@ In some cases, automatic updates can unexpectedly consume a significant portion 
 
 This script also allows for greater customization. You can choose to update your system precisely when it suits you, ensuring that updates don't interfere with your workflow or commitments.
 
-I believe that offering the option for manual updates aligns with our goal of providing a versatile and user-centric solution. If you find that automatic updates are better suited to your needs, you can always explore other methods or tools such as `cron`. We value your control and choice in how you manage your system updates.
+I believe that offering the option for manual updates aligns with our goal of providing a versatile and user-centric solution. If you find that automatic updates are better suited to your needs, you can always explore other methods or tools such as `cron`.
