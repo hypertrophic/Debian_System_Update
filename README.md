@@ -31,8 +31,7 @@ The decision to perform manual updates is based on a few key considerations:
 
 While the basic script provided focuses on updating the system, there are several options you can customize to suit your needs:
 
-- __Cron Schedule:__ If you want to automate the updates, you can set up a cron job to run the script at a specific time. Edit your crontab using the command crontab -e and add the following line to run the script every day at 9:00 PM:
-   `0 21 * * * /path/Updates.sh`
+- __Cron Schedule:__ If you want to automate the updates, you can set up a cron job to run the script at a specific time. Edit your crontab using the command crontab -e and add the following line to run the script every day at 9:00 PM: `0 21 * * * /path/Updates.sh`
          __Don'T forget to change the path!!__
   
 - __Error Handling:__ The script includes error handling to stop execution if an error occurs. This ensures that issues are addressed immediately.
