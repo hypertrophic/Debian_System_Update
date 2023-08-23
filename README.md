@@ -13,7 +13,7 @@ To run the script, follow these steps:
 2. Navigate to the directory where the script is located.
 
 3. Make the script executable by running the following command:
-   `chmod +x Script.sh`
+   `chmod +x Updates.sh`
 
 4. Run the script: `sudo ./Updates.sh` or just click on it.
 
@@ -32,8 +32,9 @@ The decision to perform manual updates is based on a few key considerations:
 While the basic script provided focuses on updating the system, there are several options you can customize to suit your needs:
 
 - __Cron Schedule:__ If you want to automate the updates, you can set up a cron job to run the script at a specific time. Edit your crontab using the command crontab -e and add the following line to run the script every day at 9:00 PM:
-   `0 21 * * * /path/to/your/script.sh`
-
+   `0 21 * * * /path/Updates.sh`
+         __Don'T forget to change the path!!__
+  
 - __Error Handling:__ The script includes error handling to stop execution if an error occurs. This ensures that issues are addressed immediately.
 
 - __Customization:__ You can modify the script to include additional commands or features to suit your specific needs like a report option that will be sent to your email.
