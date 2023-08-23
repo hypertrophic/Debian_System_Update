@@ -28,4 +28,4 @@ echo "Updates and upgrades complete."
 
 # Cron option: Add this to run the script automatically everyday at 9pm
 # Use in the terminal "crontab -e" and add the following line:
-# 0 21 * * * /path/to/your/Script.sh
+# 0 21 * * * /path/to/your/Updates.sh
