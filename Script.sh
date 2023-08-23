@@ -6,13 +6,26 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-# Update package index
+# Function to handle errors
+handle_error() {
+   echo "An error occurred. Exiting..."
+   exit 1
+}
+
+# Error handling
+trap 'handle_error' ERR
+
+# Update packages
 apt-get update
 
-# Upgrade installed packages
+# Upgrade installed packages (the y argument means always answer yes)
 apt-get upgrade -y
 
-# Perform distribution upgrade
+# Perform distribution upgrade (the y argument means always answer yes)
 apt-get dist-upgrade -y
 
 echo "Updates and upgrades complete."
+
+# Cron option: Add this to run the script automatically everyday at 9pm
+# Use in the terminal "crontab -e" and add the following line:
+# 0 21 * * * /path/to/your/Script.sh
